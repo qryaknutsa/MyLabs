@@ -10,7 +10,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         System.out.print("Выбирите погоду (1 - солнце, 2 - дождь, 3 - туман, 4 - сильный ветер, 5 - немного облачно): ");
         weather = in.nextInt();
-        System.out.println("Введите время в точности до часа: ");
+        System.out.print("Введите время в точности до часа: ");
         time = in.nextInt();
         if (weather != 1 & weather != 5) {
             throw new WeatherException("Погода не подходит для прогулок по крышам. ");
